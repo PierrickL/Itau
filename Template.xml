@@ -1,17 +1,3 @@
 <itau>
-	<main_stat>
-		<weight>1</weight>
-	</main_stat>
-	<crit>
-		<weight>0.9</weight>
-	</crit>
-	<haste>
-		<weight>0.9</weight>
-	</haste>
-	<mastery>
-		<weight>0.9</weight>
-	</mastery>
-	<versatility>
-		<weight>0.9</weight>
-	</versatility>
+	<main_stat weight="1" />
 </itau>
