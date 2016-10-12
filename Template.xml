@@ -1,3 +1,7 @@
 <itau>
-	<main_stat weight="1" />
+        <main_stat weight="1" />
+        <critical weight="0.9" />
+        <haste weight="0.8" />
+        <mastery weight="0.7" />
+        <versatility weight = "0.6" />
 </itau>
