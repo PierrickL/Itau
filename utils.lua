@@ -36,3 +36,22 @@ function get_delta_pct(old,new)
         local pct = 100 * (new - old) / old
         return round(pct,2)
 end
+
+--[[ XML generation for custom strings --]]
+function writeLine(file,text)
+	file:write(text .. "\n")
+end
+
+function _header(file)
+	writeLine(file,"<itau>")
+end
+
+function _footer(file)
+	writeLine(file,"</itau>")
+end
+
+function _toXML(k,v)
+	local xmlString;
+	xmlString = "	<"..k.." weight=\""..v.."\" />"
+	return xmlString
+end
