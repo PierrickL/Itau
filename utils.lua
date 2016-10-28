@@ -90,3 +90,8 @@ function _import(specName,itauString)
   _footer(dummy)
   dummy:close()
 end
+
+-- prints example
+function print_sample_string()
+  print("{agility=\"1\", intelligence=\"0\", strength=\"0\", crit=\"0.9\", haste=\"0.8\", mastery=\"0.7\", versatility=\"0.6\"}")
+end
