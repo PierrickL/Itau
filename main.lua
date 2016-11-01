@@ -8,6 +8,15 @@ function display(_mixed)
 	end
 end
 
+local array = {"\"0.9\"", "0.7", "0x1", "10.10", "10x10", "\"10x10\""}
+for k,v in pairs(array)
+do
+	print(v .. " is float ?")
+	
+	print(string.isFloat(v))
+end
+
+-- SAMPLE CODE FOR TESTING PURPOSES --
 -- sample itau string
 --print_sample_string()
 --[[

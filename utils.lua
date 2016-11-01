@@ -39,6 +39,8 @@ end
 
 
 --[[ string functions --]]
+
+--self explanatory
 function split(src,sep)
   local result = { }
   local from = 1
@@ -52,8 +54,14 @@ function split(src,sep)
   return result
 end
 
+--self explanatory
 function trim(s)
   return s:match'^()%s*$' and '' or s:match'^%s*(.*%S)'
+end
+
+-- return true if matches "00.10" or 00.10
+function string.isFloat(String)
+	return String==string.match(String,"^\"%d%d?%.%d%d?\"$") or String==string.match(String,"^%d%d?%.%d%d?$")
 end
 
 --[[ XML generation for custom strings --]]
